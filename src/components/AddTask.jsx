@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./AddTask.css";
+
 
 import Button from "./Button";
 
@@ -17,14 +17,14 @@ const AddTask = ({ handleTaskAddition }) => {
   };
 
   return (
-    <div className="add-task-container">
+    <div className="my-4 mx-0 flex w-full">
       <input
         onChange={handleInputChange}
         value={inputData}
-        className="add-task-input"
+        className="h-10 py-3 px-0 rounded-md border-none flex basis-2/3 bg-stone-700 text-stone-300 text-base"
         type="text"
       />
-      <div className="add-task-button-container">
+      <div className="flex ml-3">
         <Button onClick={handleAddTaskClick}>Adicionar</Button>
       </div>
     </div>

@@ -8,7 +8,7 @@ import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
 import TaskDetails from "./components/TaskDetails";
 
-import "./App.css";
+import "./global.css"
 
 const App = () => {
     const [tasks, setTasks] = useState([]);
@@ -55,7 +55,7 @@ const App = () => {
 
     return (
         <Router>
-            <div className="container">
+            <div className="max-w-lg min-h-72 p-8 overflow-auto my-8 mx-auto border-2 border-solid border-lime-500 rounded-xl">
                 <Header />
                 <Route
                     path="/"
